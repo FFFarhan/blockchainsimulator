@@ -1,0 +1,38 @@
+<!-- templates/mine_result.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mining Result</title>
+    <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Blockchain Simulator</h1>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/blocks">View Blockchain</a>
+            <a href="/mine">Mine Block</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="mining-result">
+            <h2>New Block Added:</h2>
+            <p><strong>Block Index:</strong> {{ block.index }}</p>
+            <p><strong>Timestamp:</strong> {{ block.timestamp }}</p>
+            <p><strong>Data:</strong> {{ block.data }}</p>
+            <p><strong>Hash:</strong> {{ block.hash }}</p>
+            <br>
+            <a href="/">
+                <button class="btn">Back to Blockchain</button>
+            </a>
+        </section>
+    </main>
+
+    <footer>
+        <p>Blockchain Simulator &copy; 2024</p>
+    </footer>
+</body>
+</html>

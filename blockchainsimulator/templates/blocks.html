@@ -1,0 +1,50 @@
+<!-- templates/blocks.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Blockchain</title>
+    <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Blockchain Simulator</h1>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/blocks">View Blockchain</a>
+            <a href="/mine">Mine Block</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="blockchain">
+            <h2>Current Blockchain</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Index</th>
+                        <th>Timestamp</th>
+                        <th>Data</th>
+                        <th>Hash</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for block in blockchain %}
+                    <tr>
+                        <td>{{ block.index }}</td>
+                        <td>{{ block.timestamp }}</td>
+                        <td>{{ block.data }}</td>
+                        <td>{{ block.hash }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>Blockchain Simulator &copy; 2024</p>
+    </footer>
+</body>
+</html>

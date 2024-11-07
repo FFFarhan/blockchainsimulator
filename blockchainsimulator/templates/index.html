@@ -1,0 +1,51 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blockchain Simulator</title>
+    <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Blockchain Simulator</h1>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/blocks">View Blockchain</a>
+            <a href="/mine">Mine Block</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="intro">
+            <h2>What is Blockchain?</h2>
+            <p>Blockchain is a decentralized and distributed ledger that records transactions across many computers in such a way that the registered transactions cannot be altered retroactively without the alteration of all subsequent blocks.</p>
+        </section>
+
+        <section id="how-it-works">
+            <h2>How This Simulator Works</h2>
+            <p>This simulator mimics a blockchain, allowing you to mine new blocks and view the current blockchain. The process of mining involves finding a proof of work, which requires computational power.</p>
+            <ul>
+                <li><strong>Mining:</strong> Add new blocks to the blockchain.</li>
+                <li><strong>View Blockchain:</strong> View the entire list of blocks in the blockchain.</li>
+            </ul>
+        </section>
+
+        <section id="actions">
+            <h2>Get Started</h2>
+            <p>Click on the buttons below to explore the blockchain:</p>
+            <a href="/blocks">
+                <button class="btn">View Blockchain</button>
+            </a>
+            <a href="/mine">
+                <button class="btn">Mine a Block</button>
+            </a>
+        </section>
+    </main>
+
+    <footer>
+        <p>Blockchain Simulator &copy; 2024</p>
+    </footer>
+</body>
+</html>
